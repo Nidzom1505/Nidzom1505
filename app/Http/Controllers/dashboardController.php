@@ -11,6 +11,6 @@ class dashboardController extends Controller
     {
         $data = $dashboardService->getDashboardData();
 
-        return view('dashboard', compact('data'));
+        return view('pages.dashboard', compact('data'));
     }
 }
