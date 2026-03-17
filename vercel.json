@@ -23,6 +23,10 @@
             "dest": "/public/assets/$1"
         },
         {
+            "src": "/_vercel/insights/script.js",
+            "dest": "/_vercel/insights/script.js"
+        },
+        {
             "src": "/(.*)",
             "dest": "/api/index.php"
         }
