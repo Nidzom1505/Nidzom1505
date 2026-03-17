@@ -7,7 +7,7 @@
                 <h2 class="text-4xl font-black text-slate-900 tracking-tight">Selected Works.</h2>
                 <p class="text-slate-500 mt-2">A collection of systems I've built from the ground up.</p>
             </div>
-            <a href="#" class="text-xs font-bold text-slate-400 hover:text-slate-900 transition-all tracking-widest">VIEW ARCHIVE →</a>
+            <a href="{{ route('projects') }}" class="text-xs font-bold text-slate-400 hover:text-slate-900 transition-all tracking-widest">VIEW ARCHIVE →</a>
         </div>
 
         <div class="grid md:grid-cols-2 gap-8">
