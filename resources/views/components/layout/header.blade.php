@@ -8,10 +8,10 @@
 		</div>
 
 		<ul class="hidden md:flex items-center gap-1 text-[13px] font-bold uppercase tracking-tight text-slate-600">
-			<li><a href="#home" class="px-4 py-2 rounded-full hover:text-slate-900 transition-colors">Home</a></li>
-			<li><a href="#about" class="px-4 py-2 rounded-full hover:text-slate-900 transition-colors">About</a></li>
-			<li><a href="#projects" class="px-4 py-2 rounded-full hover:text-slate-900 transition-colors">Projects</a></li>
-			<li><a href="#contact" class="px-4 py-2 rounded-full hover:text-slate-900 transition-colors">Contact</a></li>
+			<li><a href="{{ route('dashboard') }}#home" class="px-4 py-2 rounded-full hover:text-slate-900 transition-colors">Home</a></li>
+			<li><a href="{{ route('dashboard') }}#about" class="px-4 py-2 rounded-full hover:text-slate-900 transition-colors">About</a></li>
+			<li><a href="{{ route('projects') }}" class="px-4 py-2 rounded-full hover:text-slate-900 transition-colors">Projects</a></li>
+			<li><a href="{{ route('dashboard') }}#contact" class="px-4 py-2 rounded-full hover:text-slate-900 transition-colors">Contact</a></li>
 		</ul>
 
 		<div class="flex items-center gap-2 pr-1">
