@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Project;
 use Illuminate\Http\Request;
 
-class projectController
+class ProjectController
 {
     public function index(Request $request)
     {
