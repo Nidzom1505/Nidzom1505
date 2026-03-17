@@ -4,7 +4,7 @@ $storageFolders = [
     '/tmp/storage/framework/views',
     '/tmp/storage/framework/cache',
     '/tmp/storage/framework/sessions',
-    '/tmp/storage/bootstrap/cache',
+    '/tmp/bootstrap/cache',
 ];
 
 foreach ($storageFolders as $folder) {
@@ -14,11 +14,13 @@ foreach ($storageFolders as $folder) {
 }
 
 require __DIR__ . '/../vendor/autoload.php';
-
 $app = require_once __DIR__ . '/../bootstrap/app.php';
 
 $app->useStoragePath('/tmp/storage');
-$app->setBootstrapCachePath('/tmp/bootstrap/cache');
+
+$app->bind('path.bootstrap', function () {
+    return '/tmp/bootstrap';
+});
 
 $kernel = $app->make(Illuminate\Contracts\Http\Kernel::class);
 
