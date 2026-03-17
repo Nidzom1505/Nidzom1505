@@ -1,31 +1,39 @@
 <?php
 
-use Illuminate\Http\Request;
-use Illuminate\Contracts\Http\Kernel;
+// 1. Hapus paksa cache yang terbawa dari lokal jika ada
+$badCache = [
+    __DIR__ . '/../bootstrap/cache/config.php',
+    __DIR__ . '/../bootstrap/cache/routes.php'
+];
+foreach ($badCache as $cacheFile) {
+    if (file_exists($cacheFile)) {
+        unlink($cacheFile);
+    }
+}
+
+// 2. Setup folder storage di /tmp
+$storageFolders = [
+    '/tmp/storage/framework/views',
+    '/tmp/storage/framework/cache',
+    '/tmp/storage/framework/sessions',
+];
+foreach ($storageFolders as $folder) {
+    if (!is_dir($folder)) {
+        mkdir($folder, 0777, true);
+    }
+}
 
 require __DIR__ . '/../vendor/autoload.php';
 $app = require_once __DIR__ . '/../bootstrap/app.php';
 
-// Paksa folder storage ke /tmp agar tidak error Permission Denied
+// Set path storage ke /tmp
 $app->useStoragePath('/tmp/storage');
 
-// Buat folder yang diperlukan secara otomatis
-if (!is_dir('/tmp/storage/framework/views')) {
-    mkdir('/tmp/storage/framework/views', 0777, true);
-}
+$kernel = $app->make(Illuminate\Contracts\Http\Kernel::class);
 
-$kernel = $app->make(Kernel::class);
+$response = $kernel->handle(
+    $request = Illuminate\Http\Request::capture()
+);
 
-try {
-    $response = $kernel->handle(
-        $request = Request::capture()
-    );
-    $response->send();
-    $kernel->terminate($request, $response);
-} catch (\Exception $e) {
-    // TAMPILKAN ERROR ASLI DI BROWSER
-    echo "<h1>Error Terdeteksi:</h1>";
-    echo "<pre>" . $e->getMessage() . "</pre>";
-    echo "<br><b>File:</b> " . $e->getFile() . " baris " . $e->getLine();
-    exit;
-}
+$response->send();
+$kernel->terminate($request, $response);
