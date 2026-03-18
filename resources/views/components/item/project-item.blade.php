@@ -2,7 +2,11 @@
 
 <div class="group bg-white rounded-[2rem] p-3 border border-slate-100 shadow-sm hover:shadow-2xl transition-all duration-500">
     <div class="relative aspect-[16/10] rounded-[1.5rem] overflow-hidden bg-slate-100">
-        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+        <img
+            src="{{ $project->image ? asset('storage/' . $project->image) : 'https://placehold.co/800x500/f1f5f9/94a3b8?text=No+Image' }}"
+            onerror="this.onerror=null;this.src='https://placehold.co/800x500/f8fafc/cbd5e1?text=Image+Not+Found';"
+            alt="{{ $project->nama_project }}"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
 
         <div class="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
             @if ($project->link_github)
@@ -25,7 +29,7 @@
             <h3 class="text-lg font-bold text-slate-900 group-hover:text-lime-600 transition-colors">{{ $project->nama_project }}</h3>
             <p class="text-xs font-medium text-slate-400 uppercase tracking-widest mt-1">{{$project->jenis}} • {{ $project->tahun }}</p>
         </div>
-        <a href="#" class="text-slate-300 hover:text-slate-900 transition-colors">
+        <a href="{{ route('project.detail', $project) }}" class="text-slate-300 hover:text-slate-900 transition-colors">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
             </svg>
