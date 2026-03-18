@@ -4,7 +4,11 @@
 	<nav class="relative flex items-center justify-between px-2 py-2 rounded-full backdrop-blur-md transition-all duration-500">
 
 		<div class="flex items-center gap-2 pl-4">
-			<img src="{{ asset('assets/LogoResize.png') }}" alt="Logo" class="h-10 md:h-12 w-20 object-contain transition-all duration-300">
+			<a href="{{route('dashboard')}}">
+				<img src="{{ asset('assets/LogoResize.png') }}"
+					alt="Logo"
+					class="h-10 md:h-12 w-20 object-contain transition-all duration-300">
+			</a>
 		</div>
 
 		<ul class="hidden md:flex items-center gap-1 text-[13px] font-bold uppercase tracking-tight text-slate-600">
