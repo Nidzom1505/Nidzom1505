@@ -2,13 +2,14 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Http\Controllers\Controller;
 use App\Models\Experience;
 use App\Models\Profile;
 use App\Models\Project;
 use App\Models\Skill;
 use Illuminate\Http\Request;
 
-class DashboardAdminController
+class DashboardAdminController extends Controller
 {
     public function index()
     {

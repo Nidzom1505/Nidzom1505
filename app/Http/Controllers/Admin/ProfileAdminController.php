@@ -8,7 +8,7 @@ use App\Models\Profile;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 
-class ProfileAdminController
+class ProfileAdminController extends Controller
 {
     protected $profileService;
 

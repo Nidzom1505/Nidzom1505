@@ -2,10 +2,11 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Http\Controllers\Controller;
 use App\Http\Services\Admin\AuthService;
 use Illuminate\Http\Request;
 
-class LoginController
+class LoginController extends Controller
 {
     protected $authService;
 
