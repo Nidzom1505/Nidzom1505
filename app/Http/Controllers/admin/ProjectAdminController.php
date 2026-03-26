@@ -61,6 +61,8 @@ class ProjectAdminController extends Controller
             'new_screenshots.*' => 'nullable|image|max:2048',
             'kontribusi' => 'nullable|string',
             'konteks' => 'nullable|string',
+            'tantangan' => 'nullable|string',
+            'solusi' => 'nullable|string',
         ]);
     }
 }

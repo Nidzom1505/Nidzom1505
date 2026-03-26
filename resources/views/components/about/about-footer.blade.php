@@ -4,10 +4,10 @@
             Let's build something <br> <span class="text-lime-400 italic">extraordinary.</span>
         </h2>
         <div class="flex flex-wrap justify-center gap-4">
-            <a href="mailto:hello@yoursite.com" class="px-10 py-5 bg-lime-400 text-slate-900 font-black rounded-2xl hover:scale-105 transition-transform">
+            <a href="mailto:muhammadnidzomimtiyaz@gmail.com" class="px-10 py-5 bg-lime-400 text-slate-900 font-black rounded-2xl hover:scale-105 transition-transform">
                 Start a Project
             </a>
-            <a href="#" class="px-10 py-5 bg-slate-800 text-white font-black rounded-2xl hover:bg-slate-700 transition-all">
+            <a href="https://github.com/Nidzom1505" class="px-10 py-5 bg-slate-800 text-white font-black rounded-2xl hover:bg-slate-700 transition-all">
                 Check My GitHub
             </a>
         </div>

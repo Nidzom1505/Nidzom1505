@@ -4,7 +4,7 @@
     <div class="max-w-5xl w-full grid md:grid-cols-2 gap-20 items-center">
         <div class="relative">
             <div class="aspect-square rounded-[3rem] bg-slate-100 overflow-hidden rotate-3 shadow-xl transition-transform hover:rotate-0 duration-500">
-                <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Nidzom" alt="Nidzom Imtiyaz" class="w-full h-full object-cover">
+                <img src="/assets/3.png" alt="Nidzom Imtiyaz" class="w-full h-full object-cover">
             </div>
             <div class="absolute -bottom-4 -left-4 w-24 h-24 bg-lime-200 rounded-full -z-10 blur-2xl opacity-40"></div>
         </div>

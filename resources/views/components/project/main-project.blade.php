@@ -65,7 +65,6 @@
             </svg>
         </div>
         <h3 class="text-xl font-bold text-slate-900">Project not found</h3>
-        <p class="text-slate-500">Try using different keywords or categories.</p>
     </div>
     @endif
 </main>

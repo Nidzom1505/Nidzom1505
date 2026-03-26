@@ -23,6 +23,49 @@
             class="w-full px-5 py-3 bg-slate-50 border border-slate-100 rounded-2xl focus:ring-4 focus:ring-lime-400/20 outline-none transition-all">{{ old('deskripsi', $project?->deskripsi) }}</textarea>
     </div>
 
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="space-y-2">
+            <label class="text-xs font-black uppercase tracking-widest text-slate-400">GitHub Link</label>
+            <input type="url" name="link_github" value="{{ old('link_github', $project?->link_github) }}"
+                placeholder="https://github.com/..."
+                class="w-full px-5 py-3 bg-slate-50 border border-slate-100 rounded-2xl focus:ring-4 focus:ring-lime-400/20 outline-none transition-all">
+        </div>
+        <div class="space-y-2">
+            <label class="text-xs font-black uppercase tracking-widest text-slate-400">Live Project Link</label>
+            <input type="url" name="link_project" value="{{ old('link_project', $project?->link_project) }}"
+                placeholder="https://yourproject.com"
+                class="w-full px-5 py-3 bg-slate-50 border border-slate-100 rounded-2xl focus:ring-4 focus:ring-lime-400/20 outline-none transition-all">
+        </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="space-y-2">
+            <label class="text-xs font-black uppercase tracking-widest text-slate-400">Challenges (Tantangan)</label>
+            <textarea name="tantangan" rows="2"
+                class="w-full px-5 py-3 bg-slate-50 border border-slate-100 rounded-2xl focus:ring-4 focus:ring-lime-400/20 outline-none transition-all">{{ old('tantangan', $project?->tantangan) }}</textarea>
+        </div>
+        <div class="space-y-2">
+            <label class="text-xs font-black uppercase tracking-widest text-slate-400">Solution (Solusi)</label>
+            <textarea name="solusi" rows="2"
+                class="w-full px-5 py-3 bg-slate-50 border border-slate-100 rounded-2xl focus:ring-4 focus:ring-lime-400/20 outline-none transition-all">{{ old('solusi', $project?->solusi) }}</textarea>
+        </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="space-y-2">
+            <label class="text-xs font-black uppercase tracking-widest text-slate-400">Your Contribution</label>
+            <input type="text" name="kontribusi" value="{{ old('kontribusi', $project?->kontribusi) }}"
+                placeholder="e.g. Lead Developer, UI Designer"
+                class="w-full px-5 py-3 bg-slate-50 border border-slate-100 rounded-2xl focus:ring-4 focus:ring-lime-400/20 outline-none transition-all">
+        </div>
+        <div class="space-y-2">
+            <label class="text-xs font-black uppercase tracking-widest text-slate-400">Context</label>
+            <input type="text" name="konteks" value="{{ old('konteks', $project?->konteks) }}"
+                placeholder="e.g. Freelance, Personal Project, Company"
+                class="w-full px-5 py-3 bg-slate-50 border border-slate-100 rounded-2xl focus:ring-4 focus:ring-lime-400/20 outline-none transition-all">
+        </div>
+    </div>
+
     <div class="grid grid-cols-2 gap-6">
         <div class="space-y-2">
             <label class="text-xs font-black uppercase tracking-widest text-slate-400">Year</label>
