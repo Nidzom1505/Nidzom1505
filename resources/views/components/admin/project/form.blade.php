@@ -75,7 +75,7 @@
 
         <div class="space-y-2">
             <label class="text-xs font-black uppercase tracking-widest text-slate-400">Main Image</label>
-            <input type="file" name="image" {{ $project ? '' : 'required' }}
+            <input type="file" name="image"
                 class="w-full text-xs text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-xs file:font-black file:bg-lime-100 file:text-lime-700 hover:file:bg-lime-200">
         </div>
 

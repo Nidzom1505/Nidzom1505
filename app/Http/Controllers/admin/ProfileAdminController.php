@@ -33,9 +33,9 @@ class ProfileAdminController extends Controller
             'biografi_pendek'  => 'required',
             'biografi_lengkap' => 'required',
             'lokasi'           => 'required',
-            'is_available'     => 'nullable', // Kita handle manual di service
-            'foto_profil'      => 'nullable|image|mimes:jpeg,png,jpg|max:2048',
-            'resume_link'      => 'nullable|mimes:pdf|max:5120',
+            'is_available'     => 'nullable',
+            'foto_profil'      => 'nullable|image|mimes:jpeg,png,jpg|max:6000',
+            'resume_link'      => 'nullable|mimes:pdf|max:3072',
         ]);
 
         $this->profileService->updateProfile($profile, $validated);

@@ -33,7 +33,7 @@
     <div class="grid grid-cols-2 gap-4">
         @foreach($screenshots as $shot)
         <div class="rounded-[2rem] overflow-hidden bg-slate-200 aspect-video">
-            <img src="{{ asset('storage/' . $shot) }}"
+            <img src="{{ $shot }}"
                 alt="{{ $nama }} screenshot"
                 class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
         </div>

@@ -54,7 +54,7 @@ class ProjectAdminController extends Controller
             'deskripsi' => 'required',
             'jenis' => 'required',
             'tahun' => 'required|integer',
-            'image' => $id ? 'nullable|image|max:2048' : 'image|max:2048',
+            'image' => $id ? 'nullable|image|max:2048' : 'nullable|image|max:2048',
             'tech_stack' => 'nullable|array',
             'link_github' => 'nullable|url',
             'link_project' => 'nullable|url',

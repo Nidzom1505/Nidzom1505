@@ -34,7 +34,7 @@
             <div>
                 <label class="block text-xs font-bold uppercase tracking-widest text-slate-400 mb-2">Profile Picture</label>
                 <div class="flex items-center gap-4">
-                    <img src="{{ $profile->foto_profil ? asset('storage/'.$profile->foto_profil) : 'https://placehold.co/100' }}"
+                    <img src="{{ $profile->foto_profil }}"
                         class="w-20 h-20 rounded-2xl object-cover border-4 border-slate-50">
                     <input type="file" name="foto_profil" class="text-xs text-slate-500">
                 </div>
