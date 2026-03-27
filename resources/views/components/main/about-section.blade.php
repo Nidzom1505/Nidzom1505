@@ -2,12 +2,14 @@
 
 <section id="about" class="snap-start min-h-screen flex items-center justify-center px-6 bg-white">
     <div class="max-w-5xl w-full grid md:grid-cols-2 gap-20 items-center">
-        <div class="relative">
+        <picture class="relative">
             <div class="aspect-square rounded-[3rem] bg-slate-100 overflow-hidden rotate-3 shadow-xl transition-transform hover:rotate-0 duration-500">
-                <img src="/assets/3.png" alt="Nidzom Imtiyaz" class="w-full h-full object-cover">
+                <source srcset="/assets/3.avif" media="(max-width: 640px)">
+                <source srcset="/assets/3.avif">
+                <img src="/assets/3.avif" alt="Nidzom Imtiyaz" class="w-full h-full object-cover">
             </div>
             <div class="absolute -bottom-4 -left-4 w-24 h-24 bg-lime-200 rounded-full -z-10 blur-2xl opacity-40"></div>
-        </div>
+        </picture>
 
         <div>
             <span class="text-lime-600 font-bold uppercase tracking-widest text-[10px] mb-2 block">A Little Bit About Me</span>

@@ -1,6 +1,6 @@
 <section id="home" class="snap-start min-h-screen flex flex-col justify-center items-center px-6 text-center bg-slate-50">
     <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-lime-50 text-lime-600 text-[10px] font-bold uppercase tracking-widest my-5 border border-lime-100">
-        <span class="flex h-2 w-2 rounded-full bg-lime-500 animate-pulse"></span>
+        <span class="flex h-2 w-2 rounded-full bg-lime-500 animate-pulse text-lime-600"></span>
         Available for collaboration
     </div>
 
