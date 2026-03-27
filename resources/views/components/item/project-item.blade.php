@@ -3,7 +3,7 @@
 <div class="group bg-white rounded-[2rem] p-3 border border-slate-100 shadow-sm hover:shadow-2xl transition-all duration-500">
     <div class="relative aspect-[16/10] rounded-[1.5rem] overflow-hidden bg-slate-100">
         <img
-            src="{{ $project->image ? asset('storage/' . $project->image) : 'https://placehold.co/800x500/f1f5f9/94a3b8?text=No+Image' }}"
+            src="{{ $project->image ? : 'https://placehold.co/800x500/f1f5f9/94a3b8?text=No+Image' }}"
             onerror="this.onerror=null;this.src='https://placehold.co/800x500/f8fafc/cbd5e1?text=Image+Not+Found';"
             alt="{{ $project->nama_project }}"
             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
