@@ -11,6 +11,8 @@
     <meta property=""og:title" content="Muhammad Nidzom Imtiyaz | Portfolio">
     <meta property="og:description" content="Portfolio Muhammad Nidzom Imtiyaz">
     <meta property="og:image" content="/assets/2.png">
+    <meta property="og:url" content="https://nidzom-dev.my.id">
+    <meta property="og:type" content="website">
 
     <link rel="icon" href="/assets/N.png" type="image/x-icon">
 
