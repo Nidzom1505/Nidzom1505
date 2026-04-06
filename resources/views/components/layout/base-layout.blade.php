@@ -4,9 +4,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Portfolio Muhammad Nidzom Imtiyaz">
 
     <title>{{ config('app.name', 'Laravel') }}</title>
+    <meta name="description" content="Portfolio Muhammad Nidzom Imtiyaz">
+
+    <meta property=""og:title" content="Muhammad Nidzom Imtiyaz | Portfolio">
+    <meta property="og:description" content="Portfolio Muhammad Nidzom Imtiyaz">
+    <meta property="og:image" content="/assets/2.png">
+
     <link rel="icon" href="/assets/N.png" type="image/x-icon">
 
     <!-- Fonts -->
