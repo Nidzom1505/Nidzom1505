@@ -36,12 +36,12 @@ Membangun solusi dengan berbagai alat dan bahasa pemrograman modern:
 </p>
 
 <p align="center">
-  <img src="https://nirzak-streak-stats.vercel.app/?user=Nidzom1505&theme=shadow_green&hide_border=false" alt="Streak Stats" width="100%"/>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Nidzom1505&theme=shadow_green&hide_border=false" alt="Streak Stats" width="100%"/>
 </p>
 
-### 🏆 Pencapaian
+### 📈 Aktivitas GitHub
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=Nidzom1505&theme=gruvbox_light&no-frame=false&no-bg=true&margin-w=4" alt="Trophies" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Nidzom1505&theme=github-compact&bg_color=ffffff&hide_border=true" width="100%" alt="Activity Graph" />
 </p>
 
 ---
@@ -60,5 +60,5 @@ Mari berjejaring dan berdiskusi lebih lanjut melalui platform berikut:
 ![Quote](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
 
 <p align="right">
-  <img src="https://visitcount.itsvg.in/api?id=Nidzom1505&icon=7&color=0" alt="Visitor Count"/>
+  <img src="https://komarev.com/ghpvc/?username=Nidzom1505&color=green&style=flat-square&label=PROFILE+VIEWS" alt="Visitor Count" />
 </p>
